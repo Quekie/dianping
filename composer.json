@@ -1,5 +1,5 @@
 {
-  "name": "demokn/dianping",
+  "name": "terranc/dianping",
   "type": "library",
   "description": "美团点评北极星开放平台SDK",
   "keywords": [
@@ -25,8 +25,8 @@
     }
   },
   "require": {
-    "php": "^7.2",
-    "guzzlehttp/guzzle": "^6.2",
+    "php": "^7.2|^8.1",
+    "guzzlehttp/guzzle": "^6.2|^7.2",
     "symfony/http-foundation": "^4.0|^5.0",
     "pimple/pimple": "^3.3"
   },
