@@ -44,11 +44,13 @@ class SessionClient extends Client
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @return array|\Psr\Http\Message\ResponseInterface
      */
-    public function scope(string $session, string $bid)
+    public function scope(string $session, string $bid, int $offset = 0, int $limit = 500)
     {
         return $this->httpGet('router/oauth/session/scope', [
             'session' => $session,
             'bid' => $bid,
+            'offset' => $offset,
+            'limit' => $limit,
         ]);
     }
 }
